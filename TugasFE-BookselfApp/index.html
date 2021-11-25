@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Width=device-width", initial-scale=1>
+        
+        <title>BookShelf Apps</title>
+
+        <meta name="theme-color" content="rgba(29, 139, 139)">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <nav class="top-bar"></nav>
+
+        <div class="content">
+            <div class="kolom-1">
+                <div class="information-user container">
+                    <div class="img-user">
+                        <img src="assets/img/avatar (1).png" alt="Avatar">
+                    </div>
+                    <h1 class="name-user">Muhamad Ilyas</h1>
+                    <P class="bio-user">Pengguna BookShelf Apps</P>
+                </div>
+            </div>
+            <div class="kolom-2">
+                <div class="information-user container">
+                    <h1 align="center">BookShelf Apps</h1>
+                    <p align="center">Kelola Bukumu di BookShelf Apps</p>
+               
+                    <section class="input_section">
+                        <h2>Masukkan Buku Baru</h2>
+                        <form id="inputBook">
+                            <div class="input">
+                                <label for="inputBookTitle">Judul</label>
+                                <input id="inputBookTitle" type="text" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookAuthor">Penulis</label>
+                                <input id="inputBookAuthor" type="text" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookYear">Tahun</label>
+                                <input id="inputBookYear" type="number" required>
+                            </div>
+                            <div class="input_inline">
+                                <label for="inputBookIsComplete">Selesai dibaca</label>
+                                <input id="inputBookIsComplete" type="checkbox">
+                            </div>
+                            <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+                        </form>
+                    </section>
+                
+                    <section class="search_section">
+                        <h2>Cari Buku</h2>
+                        <form id="searchBook">
+                            <label for="searchBookTitle">Judul Buku</label>
+                            <input id="searchBookTitle" type="text">
+                            <button id="searchSubmit" type="submit">Cari</button>
+                        </form>
+                    </section>
+                
+                    <section class="book_shelf">
+                        <h4>Belum selesai dibaca</h4>
+
+                        <div id="incompleteBookshelfList" class="book_list">
+                            
+                        </div>
+                    </section>
+                
+                    <section class="book_shelf">
+                        <h4>Selesai dibaca</h4>
+                
+                        <div id="completeBookshelfList" class="book_list">
+                            
+                        </div>
+                    </section>
+            </div>
+        <script src="script.js"></script>    
+        <!-- <script src="./main.js"></script>
+        <script src="./storage.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    </body>
+</html>
